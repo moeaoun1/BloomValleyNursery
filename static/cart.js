@@ -22,7 +22,7 @@ function updateCartDisplay() {
 
     cartItem.innerHTML = `
     <div class="item-image">
-      <img src="img/${item.name}.jpg" alt="${item.name}">
+      <img src="/static/img/${item.name}.jpg" alt="${item.name}">
     </div>
     <div class="item-details">
       <h3>${item.name}</h3>
@@ -129,19 +129,20 @@ function decreaseQuantity(event) {
   }
 }
 
-document.querySelectorAll(".add-to-cart").forEach(button => {
-  button.addEventListener("click", addToCart);
-});
 
 // updates cart
 document.addEventListener("DOMContentLoaded", function () {
   // Update cart display
-  if (window.location.pathname.includes("cart.html")) {
+  if (window.location.pathname.includes("/cart")) {
     updateCartDisplay();
   }
 
   // Update the cart count on other pages
   updateCartCount();
+
+  document.querySelectorAll(".add-to-cart").forEach(button => {
+    button.addEventListener("click", addToCart);
+  });
 });
 
 // Function to clear the cart
@@ -152,7 +153,7 @@ function clearCart() {
   updateCartCount();
 
   // clear the cart display
-  if (window.location.pathname.includes("cart.html")) {
+  if (window.location.pathname.includes("/cart")) {
     updateCartDisplay();
     
     alert("Your cart has been cleared.");
@@ -174,7 +175,7 @@ function submitOrder() {+
 // Listen for changes in sessionStorage
 window.addEventListener("storage", () => {
   cart = JSON.parse(sessionStorage.getItem("cart")) || [];
-  if (window.location.pathname.includes("cart.html")) {
+  if (window.location.pathname.includes("/cart")) {
     updateCartDisplay();
   } else {
     updateCartCount();

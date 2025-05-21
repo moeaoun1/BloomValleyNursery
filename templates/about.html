@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us - Bloom Valley Nursery</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="cart.js" defer></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='cart.js') }}" defer></script>
     <script src="https://kit.fontawesome.com/dba77f2181.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header Section -->
     <header>
         <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Bloom Valley Valley Logo"></a>
+            <img src="{{ url_for('static', filename='img/logo.png') }}" alt="Bloom Valley Nursery Logo">
         </div>
         <div class="subscribe-container">
             <p>Subscribe to our Newsletter</p>
@@ -21,15 +21,15 @@
                 <button type="submit" class="subscribe-btn">Subscribe</button>
             </form>
         </div>      
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="shop.html">Gallery</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
-            </ul>
-        </nav>
+		<nav>
+			<ul>
+				<li><a href="{{ url_for('index') }}">Home</a></li> 
+				<li><a href="{{ url_for('shop') }}">Gallery</a></li>
+				<li><a href="{{ url_for('about') }}">About Us</a></li>
+				<li><a href="{{ url_for('contact') }}">Contact Us</a></li>
+				<li><a href="{{ url_for('cart') }}"><i class="fas fa-shopping-cart"></i> Cart (<span id="cart-count">0</span>)</a></li>
+			</ul>
+		</nav>
     </header>
 
     <!-- About Us Section -->
@@ -59,19 +59,19 @@
     <div class="footer-container">
         <!-- Logo and Name Section -->
         <div class="footer-logo">
-            <a href="index.html"><img src="img/logo.png" alt="Bloom Valley Nursery Logo" class="footer-logo-img"></a>
+            <a href="index.html"><img src="{{ url_for('static', filename='img/logo.png') }}" alt="Bloom Valley Nursery Logo" class="footer-logo-img"></a>
             <p class="footer-name">&copy; 2024 Bloom Valley Nursery</p>
         </div>
 
         <!-- Quick Links Section -->
-        <div class="quick-links">
-            <p class="quick-links-title">Quick Links</p>
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Customer Feedback</a></li>
-                <li><a href="shop.html">Gallery</a></li>
-            </ul>
-        </div>
+		<div class="quick-links">
+			<p class="quick-links-title">Quick Links</p>
+			<ul>
+				<li><a href="{{ url_for('about') }}">About Us</a></li>
+				<li><a href="{{ url_for('contact') }}">Customer Feedback</a></li>
+				<li><a href="{{ url_for('shop') }}">Gallery</a></li>
+			</ul>
+		</div>
 
         <!-- Contact Info Section -->
         <div class="contact-info">
