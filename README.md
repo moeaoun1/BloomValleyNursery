@@ -34,6 +34,68 @@ A fully functional Flask-based e-commerce prototype for a plant nursery. Built f
 ## 🔧 Setup Instructions
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/moeaoun1/BloomValleyNursery.git
    cd BloomValleyNursery
+   
+2. **Create and activate a virtual environment**
+
+python -m venv venv
+.\venv\Scripts\activate  # Windows
+
+
+3. **Install dependencies**
+
+pip install -r requirements.txt
+
+4. **Run the app**
+
+python app.py
+
+5. **Open in browser:**
+
+http://127.0.0.1:5000
+
+
+## 📂 Folder Structure
+
+BloomValleyNursery/
+│
+├── static/
+│   ├── img/
+│   ├── cart.js
+│   └── styles.css
+│
+├── templates/
+│   ├── index.html
+│   ├── shop.html
+│   ├── cart.html
+│   ├── about.html
+│   └── contact.html
+│
+├── app.py
+├── requirements.txt
+└── README.md
+
+
+## 🧠 Lessons Learned
+
+
+- Flask routing and templating with Jinja2
+
+- Managing state client-side with sessionStorage
+
+- Handling project structure and static asset serving
+
+- Git/GitHub version control + deployment workflow
+
+
+
+## 📬 Contact
+
+- Moe Aoun
+- 📧 moejaoun@gmail.com
+- 🔗 LinkedIn
+
+---
