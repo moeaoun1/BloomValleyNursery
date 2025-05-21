@@ -58,7 +58,7 @@ http://127.0.0.1:5000
 
 
 ## 📂 Folder Structure
-
+<pre>
 BloomValleyNursery/
 │
 ├── static/
@@ -76,7 +76,7 @@ BloomValleyNursery/
 ├── app.py
 ├── requirements.txt
 └── README.md
-
+</pre>
 
 ## 🧠 Lessons Learned
 
