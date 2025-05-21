@@ -4,7 +4,7 @@ A fully functional Flask-based e-commerce prototype for a plant nursery. Built f
 
 ## 🚀 Live Demo
 
-👉 [View it on PythonAnywhere](https://moeaoun.pythonanywhere.com) *(replace with actual URL if deployed)*  
+👉 [View it on PythonAnywhere](https://moeaoun.pythonanywhere.com) 
 👉 [GitHub Repo](https://github.com/moeaoun1/BloomValleyNursery)
 
 ---
@@ -35,9 +35,8 @@ A fully functional Flask-based e-commerce prototype for a plant nursery. Built f
 
 1. **Clone the repository**
 
-   ```bash
-   git clone https://github.com/moeaoun1/BloomValleyNursery.git
-   cd BloomValleyNursery
+git clone https://github.com/moeaoun1/BloomValleyNursery.git
+cd BloomValleyNursery
    
 2. **Create and activate a virtual environment**
 
