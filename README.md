@@ -95,6 +95,6 @@ BloomValleyNursery/
 
 - Moe Aoun
 - 📧 moejaoun@gmail.com
-- 🔗 LinkedIn
+- 🔗 [LinkedIn](https://www.linkedin.com/in/moe-aoun/)
 
 ---
